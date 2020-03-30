@@ -29,9 +29,9 @@ def sin_cos():
     cos_x = numpy.zeros(num_points)
 
     for i in range(num_points):
-        x[i] = ###Your code here
-        sin_x[i] = ###Your code here
-        cos_x[i] = ###Your code here
+        x[i] = 2.0 * math.pi * i/(num_points - 1.0)
+        sin_x[i] = math.sin(x[i])
+        cos_x[i] = math.cos(x[i])
     return x, sin_x, cos_x
 
 x, sin_x, cos_x = sin_cos()
